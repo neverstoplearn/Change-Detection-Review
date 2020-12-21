@@ -16,12 +16,66 @@ Figure 2 provide a general implementation process of AI-based change detection, 
 ### 2.1 Available codes for AI-based methods
 
 <table>
-<caption>Tabel 1. A list of available codes for AI-based change detection methods.</caption>
+<caption>Table 1. A list of available codes for AI-based change detection methods.</caption>
 	<tr>
 	    <th>Methods</th>
 	    <th>Keywords</th>
 	    <th>Publication</th>  
         <th>(Re-)Implementation</th>
+	</tr>
+	<tr>
+	    <td>DSMSCN</td>
+	    <td>CNN; Siamese; Multi-scale; Unsupervised/Supervised; Optical RS</td>
+	    <td> A deeply supervised image fusion network for change detection in high resolution bi-temporal remote sening images, arXiv, 2020.  [<a href="https://arxiv.org/abs/1906.11479" target="_blank">paper</a>], [<a href="https://github.com/I-Hope-Peace/DSMSCN" target="_blank">code, dataset</a>]</td>
+        <td>Tensorflow 1.9</td>
+	</tr>
+	<tr>
+	    <td>SiamCRNN</td>
+	    <td>CNN+RNN; Siamese; Multi-source; Optical RS</td>
+	    <td> Change Detection in Multisource VHR Images via Deep Siamese Convolutional Multiple-Layers Recurrent Neural Network, TGRS, 2020.  [<a href="https://doi.org/10.1109/TGRS.2019.2956756" target="_blank">paper</a>], [<a href="https://github.com/I-Hope-Peace/SiamCRNN" target="_blank">code, dataset</a>]</td>
+        <td>Tensorflow 1.9</td>
+	</tr>
+	<tr>
+	    <td>DSIFN</td>
+	    <td>CNN; Attention Mechanism; Optical RS</td>
+	    <td> A deeply supervised image fusion network for change detection in high resolution bi-temporal remote sening images, ISPRS, 2020.  [<a href="https://doi.org/10.1016/j.isprsjprs.2020.06.003" target="_blank">paper</a>], [<a href="https://github.com/GeoZcx/A-deeply-supervised-image-fusion-network-for-change-detection-in-remote-sensing-images" target="_blank">code, dataset</a>]</td>
+        <td>Pytorch & Keras</td>
+	</tr>
+	<tr>
+	    <td>CEECNet</td>
+	    <td>CNN; Attention Mechanism; Similarity Measure; Optical RS</td>
+	    <td> Looking for change? Roll the Dice and demand Attention, arXiv, 2020.  [<a href="https://arxiv.org/abs/2009.02062" target="_blank">paper</a>], [<a href="https://github.com/feevos/ceecnet" target="_blank">code, dataset</a>]</td>
+        <td>MXNet + Python</td>
+	</tr>
+	<tr>
+	    <td>LamboiseNet</td>
+	    <td>CNN (Light UNet++); Optical RS</td>
+	    <td> Change detection in satellite imagery using deep learning, Master Thesis.  [<a href="https://github.com/hbaudhuin/LamboiseNet" target="_blank">code, dataset, pre-trained model</a>]</td>
+        <td>Pytorch</td>
+	</tr>
+	<tr>
+	    <td>DTCDSCN</td>
+	    <td>CNN; Siamese</td>
+	    <td> Building change detection for remote sensing images using a dual task constrained deep siamese convolutional network model, undergoing review.  [<a href="https://github.com/fitzpchao/DTCDSCN" target="_blank">code, dataset</a>]</td>
+        <td>Pytorch</td>
+	</tr>
+	<tr>
+	    <td>Land-Cover-Analysis</td>
+	    <td>CNN (UNet); Post-Classification;  Optical RS</td>
+	    <td> Land Use/Land cover change detection in cyclone affected areas using convolutional neural networks.  [<a href="https://github.com/Kalit31/Land-Cover-Analysis/blob/master/Report.pdf" target="_blank">report</a>], [<a href="https://github.com/Kalit31/Land-Cover-Analysis" target="_blank">code, dataset, pre-trained model</a>]</td>
+        <td>TensorFlow+Keras</td>
+	</tr>
+	<tr>
+	    <td>CorrFusionNet</td>
+	    <td>CNN; Scene-level; Siamese;  Optical RS</td>
+	    <td> Correlation based fusion network towards multi-temporal scene classification and change detection, undergoing review.  [<a href="https://github.com/rulixiang/CorrFusionNet" target="_blank">code, pre-trained model</a>], [<a href="https://github.com/rulixiang/MtS-WH-Dataset" target="_blank">dataset</a>]</td>
+        <td>TensorFlow 1.8</td>
+	</tr>
+	<tr>
+	    <td>SSCDNet</td>
+	    <td>CNN (ResNet18); Siamese; Transfer Learning; Semantic; Streetview</td>
+	    <td>Weakly supervised silhouette-based semantic scene change detection, ICRA, 2020.  [<a href="https://arxiv.org/abs/1811.11985" target="_blank">paper</a>] [<a href="https://github.com/xdspacelab/sscdnet" target="_blank">code, dataset, pre-trained model</a>]</td>
+        <td>Pytorch+Python3.6</td>
 	</tr>
      <tr>
 	    <td>Heterogeneous_CD</td>
@@ -61,6 +115,12 @@ Figure 2 provide a general implementation process of AI-based change detection, 
 	    <td>Change detection based on deep features and low rank, GRSL, 2017. [<a href="https://dx.doi.org/10.1109/LGRS.2017.2766840" target="_blank">paper</a>]  [<a href="https://github.com/MinZHANG-WHU/FDCNN/tree/master/vgg_lr" target="_blank">re-implementation code, dataset, pre-trained model</a>]</td>
         <td>Caffe+Matlab</td>
 	</tr>
+	<tr>
+	    <td>CDNet</td>
+	    <td>CNN; Siamese; Multimodal Data; Point Cloud Data</td>
+	    <td> Detecting building changes between airborne laser scanning and photogrammetric data, RS, 2019. [<a href="https://doi.org/10.3390/rs11202417" target="_blank">paper</a>], [<a href="https://github.com/Zhenchaolibrary/PointCloud2PointCloud-Change-Detection" target="_blank">code</a>]</td>
+        <td>Pytorch</td>
+	</tr>
      <tr>
 	    <td>SCCN</td>
 	    <td>AE (DAE); Unsupervised; Heterogeneous; Optical RS; SAR</td>
@@ -82,12 +142,12 @@ Figure 2 provide a general implementation process of AI-based change detection, 
     <tr>
 	    <td>UNetLSTM</td>
 	    <td>CNN (UNet); RNN (LSTM); Integrated Model; Optical RS</td>
-	    <td>Detecting Urban Changes With Recurrent Neural Networks From Multitemporal Sentinel-2 Data, IGARSS, 2019. [<a href="https://arxiv.org/abs/1910.07778" target="_blank">paper</a>]  [<a href="https://github.com/granularai/chip_segmentation_fabric" target="_blank">code, dataset, pre-trained model</a>]</td>
+	    <td>Detecting Urban Changes With Recurrent Neural Networks From Multitemporal Sentinel-2 Data, IGARSS, 2019. [<a href="https://arxiv.org/abs/1910.07778" target="_blank">paper</a>]  [<a href="https://github.com/granularai/chip_segmentation_fabric" target="_blank">code, dataset, pre-trained model</a>] and  [<a href="https://github.com/SebastianHafner/urban_change_detection" target="_blank">code</a>]</td>
         <td>Pytorch+Python3.6</td>
 	</tr><tr>
 	    <td>CDMI-Net</td>
 	    <td>CNN (Unet); Pure-Siamese; Multiple Instance Learning; Landslide Mapping; Optical RS</td>
-	    <td>Deep multiple instance learning for landslide mapping, 2020. [<a href="" target="_blank">paper</a>]  [<a href="https://github.com/MinZHANG-WHU/CDMI-Net" target="_blank">code</a>]</td>
+	    <td>Deep multiple instance learning for landslide mapping, GRSL, 2020. [<a href="https://dx.doi.org/10.1109/LGRS.2020.3007183" target="_blank">paper</a>]  [<a href="https://github.com/MinZHANG-WHU/CDMI-Net" target="_blank">code, pre-trained model</a>]</td>
         <td>Pytorch+Python3.6</td>
 	</tr>
     <tr>
@@ -106,6 +166,12 @@ Figure 2 provide a general implementation process of AI-based change detection, 
 	    <td>SiameseNet</td>
 	    <td>CNN (VGG16); Pure-Siamese; Optical RS</td>
 	    <td>Siamese network with multi-level features for patch-based change detection in satellite imagery, GlobalSIP, 2018. [<a href="https://sigport.org/documents/siamese-network-multi-level-features-patch-based-change-detection-satellite-imagery" target="_blank">paper</a>]  [<a href="https://github.com/vbhavank/Siamese-neural-network-for-change-detection" target="_blank">code, dataset</a>]</td>
+        <td>TensorFlow+Keras</td>
+	</tr>
+	<tr>
+	    <td>Re3FCN</td>
+	    <td>CNN (ConvLSTM); PCA; 3D convolution; Multi-class changes; Optical RS; Hyperspectral</td>
+	    <td>Change detection in hyperspectral images using recurrent 3D fully convolutional networks, RS, 2018. [<a href="https://doi.org/10.3390/rs10111827" target="_blank">paper</a>]  [<a href="https://github.com/mkbensalah/Change-Detection-in-Hyperspectral-Images target="_blank">code, dataset</a>]</td>
         <td>TensorFlow+Keras</td>
 	</tr>
     <tr>
@@ -162,6 +228,12 @@ Figure 2 provide a general implementation process of AI-based change detection, 
 	    <td>Change detection from synthetic aperture radar images based on channel weighting-based deep cascade network, JSTARS, 2019. [<a href="https://dx.doi.org/10.1109/JSTARS.2019.2953128" target="_blank">paper</a>]  [<a href="https://github.com/summitgao/SAR_CD_DCNet" target="_blank">code, dataset</a>]</td>
         <td>Caffe</td>
 	</tr>
+	<tr>
+	    <td>ChangeNet</td>
+	    <td>CNN; Siamese; StreetView</td>
+	    <td>ChangeNet: a deep learning architecture for visual change detection, ECCV, 2018. [<a href="http://openaccess.thecvf.com/content_eccv_2018_workshops/w7/html/Varghese_ChangeNet_A_Deep_Learning_Architecture_for_Visual_Change_Detection_ECCVW_2018_paper.html" target="_blank">paper</a>]  [<a href="https://github.com/leonardoaraujosantos/ChangeNet" target="_blank">code, dataset</a>]</td>
+        <td>Pytorch</td>
+	</tr>
     <tr>
 	    <td colspan="4">Others will be added soon!</td>
     </tr>
@@ -170,7 +242,7 @@ Figure 2 provide a general implementation process of AI-based change detection, 
 ### 2.2 Available codes for traditional methods
 
 <table>
-<caption>Tabel 2. A list of available codes for traditional change detection methods.</caption>
+<caption>Table 2. A list of available codes for traditional change detection methods.</caption>
 	<tr>
 	    <th>Methods</th>
 	    <th>Keywords</th>
@@ -181,6 +253,12 @@ Figure 2 provide a general implementation process of AI-based change detection, 
 	    <td>Several Classical Methods</td>
 	    <td>CVA; DPCA; Image Differencing; Image Ratioing; Image Regression; IR-MAD; MAD; PCAkMeans; PCDA; KMeans; OTSU; Fixed Threshold</td>
 	    <td>A toolbox for remote sensing change detection. [<a href="https://github.com/Bobholamovic/ChangeDetectionToolbox" target="_blank">code</a>]</td>
+        <td>Matlab</td>
+	</tr>
+	<tr>
+	    <td>Matlab Toolbox Change Detection</td>
+	    <td>IR-MAD; IT-PCA; ERM; ICM</td>
+	    <td>A toolbox for unsupervised change detection analysis, IJRS, 2016.[<a href="https://doi.org/10.1080/01431161.2016.1154226" target="_blank">paper</a>] [<a href="https://github.com/NicolaFalco/Matlab-toolbox-change-detection" target="_blank">code</a>]</td>
         <td>Matlab</td>
 	</tr>
     <tr>
@@ -226,6 +304,12 @@ Figure 2 provide a general implementation process of AI-based change detection, 
 images, 2015. [<a href="https://github.com/fouronnes/SAR-change-detection/blob/master/SAR_Change_Detection_Victor_Poughon.pdf" target="_blank">report</a>]  [<a href="https://github.com/fouronnes/SAR-change-detection" target="_blank">code</a>]</td>
         <td>Python</td>
 	</tr>
+	<tr>
+	    <td>PCA K-Means</td>
+	    <td>Unsupervised; DI-based; PCA; K Means; Optical RS</td>
+	    <td>Unsupervised Change Detection in Satellite Images Using Principal Component Analysis and k-Means Clustering, GRSL, 2009. [<a href="https://dx.doi.org/10.1109/LGRS.2009.2025059" target="_blank">paper</a>]  [<a href="https://github.com/rulixiang/ChangeDetectionPCAKmeans" target="_blank">re-implementation code, dataset</a>] or [<a href="https://github.com/leduckhai/Change-Detection-PCA-KMeans" target="_blank">re-implementation code</a>]</td>
+        <td>Matlab</td>
+	</tr>
     <tr>
 	    <td colspan="4">Others will be added soon!</td>
     </tr>
@@ -236,14 +320,18 @@ images, 2015. [<a href="https://github.com/fouronnes/SAR-change-detection/blob/m
 
 Currently, there are some freely available data sets for change detection, which can be used as benchmark datasets for AI training and accuracy evaluation in future research. Detailed information is presented in Table 3.
 <table>
-<caption>Tabel 3. A list of open datasets for change detection.</caption>
+<caption>Table 3. A list of open datasets for change detection.</caption>
 	<tr>
 	    <th>Type</th>
 	    <th width="180px">Data set</th>
 	    <th>Description</th>  
 	</tr>
 	<tr>
-	    <td rowspan="14">Optical RS</td>
+	    <td rowspan="16">Optical RS</td>
+	    <td>SEmantic Change detectiON Dataset (SECOND) [<a href="#Ref-24">24</a>] </td>
+	    <td>a pixel-level annotated semantic change detection dataset, including 4662 pairs of aerial images with 512 x 512 pixels from several platforms and sensors, covering Hangzhou, Chengdu, and Shanghai.  It focus on 6 main land-cover classes, i.e. , non-vegetated ground surface, tree, low vegetation, water, buildings and playgrounds , that are frequently involved in natural and man-made geographical changes. [<a href="http://www.captain-whu.com/PROJECT/SCD/" target="_blank">Download</a>]</td>
+	</tr>
+	<tr>
 	    <td>Hyperspectral change detection dataset [<a href="#Ref-1">1</a>] </td>
 	    <td>3 different hyperspectral scenes acquired by AVIRIS or HYPERION sensor, with 224 or 242 spectral bands, labeled 5 types of changes related with crop transitions at pixel level. [<a href="https://citius.usc.es/investigacion/datasets/hyperspectral-change-detection-dataset" target="_blank">Download</a>]</td>
 	</tr>
@@ -297,6 +385,10 @@ Currently, there are some freely available data sets for change detection, which
     <tr>
 	    <td>Bastrop fire dataset [<a href="#Ref-21">21</a>]</td>
 	    <td>4 images acquired by different sensors over the Bastrop County, Texas (USA). It is composed by a Landsat 5 TM as the pre-event image and a Landsat 5 TM, a EO-1 ALI and a Landsat 8 as post-event images, labeled as changed and unchanged at pixel level, mainly caused by wildfire. [<a href="https://sites.google.com/site/michelevolpiresearch/codes/cross-sensor" target="_blank">Download</a>]</td>
+    </tr>
+	 <tr>
+	    <td>Google data set [<a href="#Ref-23">23</a>]</td>
+	    <td>19 season-varying VHR images pairswith 3 bands of red, green, and blue, a spatial resolution of 0.55 m, and the size ranging from 1006×1168 pixels to 4936×5224 pixels. The image changes include waters, roads, farmland, bare land, forests, buildings, ships, etc. Buildings make up the main changes. acquired during the periods between 2006 and 2019, covering the suburb areas of Guangzhou City, China. [<a href="https://github.com/daifeng2016/Change-Detection-Dataset-for-High-Resolution-Satellite-Imagery" target="_blank">Download</a>]</td>
     </tr>
     <tr>
 	    <td rowspan="1" >Optical RS & SAR</td>
@@ -352,7 +444,7 @@ We provide an overview of the various change detection techniques in the literat
 	    <th>Papers</th>  
 	</tr>
 	<tr>
-	    <td rowspan="9">Urban contexts</td>
+	    <td rowspan="10">Urban contexts</td>
 	    <td rowspan="2">Urban expansion</td>
 	    <td>Satellite images  </td>
         <td><a href="https://dx.doi.org/10.3390/rs10030471" target="_blank">Lyu et.al (2018)</a>, <a href="https://dx.doi.org/10.1080/01431160903475290" target="_blank">Tong et.al (2007)</a></td>
@@ -361,10 +453,15 @@ We provide an overview of the various change detection techniques in the literat
 	    <td>SAR images  </td>
         <td><a href="https://scholar.google.com/scholar_lookup?title=Generating+high-accuracy+urban+distribution+map+for+short-term+change+monitoring+based+on+convolutional+neural+network+by+utilizing+SAR+imagery&author=Iino,+S.&author=Ito,+R.&author=Doi,+K.&author=Imaizumi,+T.&author=Hikosaka,+S.&publication_year=2017" target="_blank">Iino et.al (2017)</a></td>
 	</tr>
-    <tr>
+	<tr>
 	    <td>Public space management</td>
 	    <td>Street view images</td>
         <td><a href="https://scholar.google.com/scholar_lookup?title=ChangeNet:+A+deep+learning+architecture+for+visual+change+detection&conference=Proceedings+of+the+European+Conference+on+Computer+Vision+(ECCV)&author=Varghese,+A.&author=Gubbi,+J.&author=Ramaswamy,+A.&author=Balamuralidhar,+P.&publication_year=2018&pages=129%E2%80%93145" target="_blank">Varghese et.al (2018)</a></td>
+	</tr>
+    <tr>
+	    <td>Road surface</td>
+	    <td>UAV images</td>
+        <td><a href="https://doi.org/10.3390/su12062482" target="_blank">Truong et.al (2020)</a></td>
 	</tr>
     <tr>
 	    <td rowspan="6">Building change detection</td>
@@ -377,7 +474,7 @@ We provide an overview of the various change detection techniques in the literat
 	</tr>
     <tr>
 	    <td>Satellite/Aerial images</td>
-        <td><a href="https://dx.doi.org/10.3390/rs12030484" target="_blank">Jiang  et.al (2020)</a>, <a href="https://dx.doi.org/10.1109/TGRS.2018.2858817" target="_blank">Ji et.al (2018)</a></td>
+        <td><a href="https://dx.doi.org/10.3390/rs12030484" target="_blank">Jiang  et.al (2020)</a>, <a href="https://dx.doi.org/10.1109/TGRS.2018.2858817" target="_blank">Ji et.al (2018)</a>, <a href="https://dx.doi.org/10.1109/TGRS.2020.3000296" target="_blank">Saha et.al (2020)</a></td>
 	</tr>
     <tr>
 	    <td>Airborne laser scanning data and aerial images </td>
@@ -459,7 +556,7 @@ We provide an overview of the various change detection techniques in the literat
 ## 5. Software programs
 There are currently a large number of software with change detection tools, and we have a brief summary of them, see table 5.
 <table>
-<caption>Tabel 5. A list of software for change detection.</caption>
+<caption>Table 5. A list of software for change detection.</caption>
 	<tr>
 	    <th>Type</th>
 	    <th>Name</th>
@@ -505,8 +602,73 @@ There are currently a large number of software with change detection tools, and 
     </tr>
 <table>
 
+## 6. Review papers for change detection
+The following papers are helpful for researchers to better understand this  field of remote sensing change detection, see table 6.
+<table>
+<caption>Table 6. A list of review papers on change detection.</caption>
+	<tr>
+	    <th>Published year</th>
+	    <th>Review paper</th>
+	</tr>
+    <tr>
+    <td>1989</td>
+    <td>Digital change detection techniques using remotely sensed data, IJRS. [<a href="https://dx.doi.org/10.1080/01431168908903939" target="_blank">paper</a>]</td>
+    </tr>
+	 <tr>
+    <td>2004</td>
+    <td>Digital change detection methods in ecosystem monitoring: a review, IJRS. [<a href="https://dx.doi.org/10.1080/0143116031000101675" target="_blank">paper</a>]</td>
+    </tr>
+	 <tr>
+	 <td>2004</td>
+    <td>Change detection techniques, IJRS. [<a href="https://dx.doi.org/10.1080/0143116031000139863" target="_blank">paper</a>]</td>
+    </tr>
+	 <tr>
+	<td>2012</td>
+    <td>Object-based change detection, IJRS. [<a href="https://dx.doi.org/10.1080/01431161.2011.648285" target="_blank">paper</a>]</td>
+    </tr>
+	 <tr>
+	 <td>2013</td>
+    <td>Change detection from remotely sensed images: From pixel-based to object-based approaches, ISPRS. [<a href="https://doi.org/10.1016/j.isprsjprs.2013.03.006" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2016</td>
+    <td>3D change detection–approaches and applications, ISPRS. [<a href="https://doi.org/10.1016/j.isprsjprs.2016.09.013" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2016</td>
+    <td>Deep learning for remote sensing data a technical tutorial on the state of the art, MGRS. [<a href="https://dx.doi.org/10.1109/MGRS.2016.2540798" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2017</td>
+    <td>Comprehensive survey of deep learning in remote sensing: theories, tools, and challenges for the community, JRS. [<a href="https://doi.org/10.1117/1.JRS.11.042609" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2017</td>
+    <td>Deep Learning in Remote Sensing, MGRS. [<a href="https://dx.doi.org/10.1109/MGRS.2017.2762307" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2018</td>
+    <td>Computational intelligence in optical remote sensing image processing, ASOC. [<a href="https://doi.org/10.1016/j.asoc.2017.11.045" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2019</td>
+    <td>A review of change detection in multitemporal hyperspectral images: current techniques, applications, and challenges, MGRS. [<a href="https://dx.doi.org/10.1109/MGRS.2019.2898520" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2019</td>
+    <td>Deep learning in remote sensing applications: A meta-analysis and review, ISPRS. [<a href="https://doi.org/10.1016/j.isprsjprs.2019.04.015" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2020</td>
+    <td>Deep Learning for change detection in remote sensing images: comprehensive review and meta-analysis, arXiv. [<a href="https://arxiv.org/abs/2006.05612" target="_blank">paper</a>]</td>
+    </tr>
+	<tr>
+	 <td>2020</td>
+    <td>Change detection based on artificial intelligence: state-of-the-art and challenges, RS. [<a href="https://doi.org/10.3390/rs12101688" target="_blank">paper</a>]</td>
+    </tr>
+<table>
 
-## 6. Reference
+## 7. Reference
 <span id="Ref-1">[1] Hyperspectral Change Detection Dataset. Available online: https://citius.usc.es/investigacion/datasets/hyperspectral-change-detection-dataset (accessed on 4 May 2020).</span>
 
 <span id="Ref-2">[2] Wang, Q.; Yuan, Z.; Du, Q.; Li, X. GETNET: A General End-to-End 2-D CNN Framework for Hyperspectral Image Change Detection. IEEE Trans. Geosci. Remote Sens. 2018, 57, 3–13. [<a href="https://scholar.google.com/scholar_lookup?title=GETNET:+A+General+End-to-End+2-D+CNN+Framework+for+Hyperspectral+Image+Change+Detection&author=Wang,+Q.&author=Yuan,+Z.&author=Du,+Q.&author=Li,+X.&publication_year=2018&journal=IEEE+Trans.+Geosci.+Remote+Sens.&volume=57&pages=3%E2%80%9313&doi=10.1109/TGRS.2018.2849692" target="_blank">Google Scholar</a>] [<a href="https://ieeexplore.ieee.org/document/8418840/" target="_blank">CrossRef</a>]</span>
@@ -551,6 +713,9 @@ There are currently a large number of software with change detection tools, and 
 
 <span id="Ref-22">[22] L. T. Luppino, F. M. Bianchi, G. Moser and S. N. Anfinsen. Unsupervised Image Regression for Heterogeneous Change Detection. IEEE Transactions on Geoscience and Remote Sensing. 2019, vol. 57, no. 12, pp. 9960-9975. [<a href="https://dx.doi.org/10.1109/TGRS.2019.2930348" target="_blank">CrossRef</a>] </span>
 
+<span id="Ref-23">[23] D. Peng, L. Bruzzone, Y. Zhang, H. Guan, H. Ding and X. Huang, SemiCDNet: A Semisupervised Convolutional Neural Network for Change Detection in High Resolution Remote-Sensing Images. IEEE Transactions on Geoscience and Remote Sensing. 2020. [<a href="https://dx.doi.org/10.1109/TGRS.2020.3011913" target="_blank">CrossRef</a>] </span>
+
+<span id="Ref-24">[24] Yang, Kunping, et al. Asymmetric Siamese Networks for Semantic Change Detection. arXiv preprint arXiv:2010.05687 (2020). [<a href="https://arxiv.org/abs/2010.05687" target="_blank">CrossRef</a>] </span>
 
 ## Cite
 If you find this review helpful to you, please consider citing our paper. [<a href="https://doi.org/10.3390/rs12101688" target="_blank">Open Access</a>]
